@@ -1,0 +1,17 @@
+[project]
+name = "agent-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cachetools>=6.2.0",
+    "fastapi>=0.116.1",
+    "langchain-mcp-adapters>=0.1.9",
+    "langchain-openai>=0.3.33",
+    "langgraph>=0.6.7",
+    "openai>=1.107.1",
+    "python-dateutil>=2.9.0.post0",
+    "pytz>=2025.2",
+    "uvicorn>=0.35.0",
+]

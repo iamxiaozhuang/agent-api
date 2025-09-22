@@ -1,0 +1,28 @@
+@baseUrl = http://127.0.0.1:8000
+
+GET {{baseUrl}}/items/1
+
+
+### 测试 GET 请求
+GET {{baseUrl}}/items/1
+
+### 测试带参数的 GET 请求
+GET {{baseUrl}}/items/123?query=hello
+
+### 测试 POST 请求
+POST {{baseUrl}}/test
+Content-Type: application/json
+
+{
+  "name": "apple",
+  "price": 3.5
+}
+
+### 测试 POST 请求
+POST {{baseUrl}}/test
+Content-Type: application/json
+
+{
+  "user_message": "6加5等于多少",
+  "user_ID": "user_123"
+}
