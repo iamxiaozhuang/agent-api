@@ -65,6 +65,7 @@ async def get_or_create_agent(user_id: str):
     if user_id not in user_agents:
         # 获取 MCP tools
         mcp_tools = await mcp_client.get_tools()
+        # 直接返回执行工具的结果
         for t in mcp_tools:
             t.return_direct = True
 
